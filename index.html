@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая 15 модуль</title>
+
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <form class="film-form" id="film-form" action="#">
+        <ul class="film-form__list">
+            <li class="film-form__item">
+                <label class="film-form__label" for="title">Название:</label>
+                <input class="film-form__field" type="text" name="title" id="title">
+            </li>
+            <li class="film-form__item">
+                <label class="film-form__label" for="genre">Жанр:</label>
+                <input class="film-form__field" type="text" name="genre" id="genre">
+            </li>
+            <li class="film-form__item">
+                <label class="film-form__label" for="releaseYear">Год:</label>
+                <input class="film-form__field" type="text" name="releaseYear" id="releaseYear">
+            </li>
+            <li class="film-form__item">
+                <input class="film-form__checkbox" type="checkbox" name="isWatched" id="isWatched">
+                <label class="film-form__label" for="isWatched">Успели посмотреть?</label>
+            </li>
+            <li class="film-form__item">
+                <input class="film-form__submit" type="submit" value="Submit">
+            </li>
+        </ul>
+    </form>
+    <div class="wrapper">
+        <form class="filter-form" id="filtrFilmForm" action="#">
+        <ul class="filter-form__list">
+            <li class="filter-form__item">
+                <input class="filter-form__input" type="text" id="searchByTitle" name="searchByTitle" placeholder="Название фильма">
+            </li>
+            <li class="filter-form__item">
+                <input class="filter-form__input" type="text" id="searchByGenre" name="searchByGenre" placeholder="Жанр">
+            </li>
+            <li class="filter-form__item">
+                <input class="filter-form__input" type="text" id="searchByYear" name="searchByYear" placeholder="Год">
+            </li>
+            <li class="filter-form__item">
+                <select id="filter">
+                    <option value="all">Все</option>
+                    <option value="Yes">Да</option>
+                    <option value="No">Нет</option>
+                </select>
+            </li>
+        </ul>
+    </form>
+    <button class="delete-btn" id="button">Удалить всё</button> 
+    </div>
+    <table id="film-table">
+        <thead>
+            <tr>
+                <th>Название</th>
+                <th>Жанр</th>
+                <th>Год</th>
+                <th>Успели посмотреть?</th>
+                <th>Действие</th>
+            </tr>
+        </thead>
+        <tbody id="film-tbody">
+            <!-- Rows will be inserted here -->
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
