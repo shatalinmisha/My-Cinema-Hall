@@ -71,13 +71,8 @@
     ```
 
 ## Структура проекта
-├── README.md # Этот файл
-├── index.html # Основной HTML-файл
-├── style.css # Файл стилей
-├── script.js # Основной JavaScript-файл
-    ├── choices.min.js # Библиотека choices.js
-    ├── JustValidate.min.js # Библиотека JustValidate.js
 
+  <pre><code>```text Вот краткое описание структуры проекта: /репозиторий ├── README.md # Этот файл ├── index.html # Основной HTML-файл ├── style.css # Файл стилей ├── script.js # Основной JavaScript-файл ├── choices.min.js # Библиотека choices.js └── JustValidate.min.js # Библиотека JustValidate.js ```</code></pre>
 
 ## Зависимости
 
