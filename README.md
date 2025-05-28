@@ -73,17 +73,17 @@
 ## Структура проекта
 
 Вот краткое описание структуры проекта:
-
+```
 /репозиторий
-├── index.html
-├── css/
-│   └── style.css
+├── index.html                # Основной HTML-файл
+├── css/                      
+│   └── style.css             # Файл стилей
 ├── js/
-│   ├── script.js
-│   ├── choices.min.js
-│   └── JustValidate.min.js
-└── README.md
-
+│   ├── script.js             # Основной JavaScript-файл
+│   ├── choices.min.js        # Библиотека choices.js
+│   └── JustValidate.min.js   # Библиотека JustValidate.js
+└── README.md                 # Этот файл
+```
 ## Зависимости
 
 - [choices.js](https://github.com/jshjohnson/Choices): Для создания интерактивных выпадающих списков.
